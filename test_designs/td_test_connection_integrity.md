@@ -9,6 +9,8 @@
 
 # Test Bed diagram
 
+<div hidden>
+
 ```
 @startuml required_equipment
 
@@ -26,25 +28,53 @@ package "Remote Chassis" {
 @enduml
 ```
 
-![](required_equipment.svg)
+</div>
+
+![](svg/test_design_template_setup_1.svg)
 
 
-# Preconditions
+# The goal
+The goal for the test designs included in this test scenario is
+to verify connection integrity...
+
+
+# Test Scenarios
+
+## **test_connection_integrity.scenario_1**
+### Preconditions
 - DUT is in the X state
 - Application X downloaded to DUT
 - Task A is inhibited
 - All connections with external devices are set
 - All connections are not flickering over 20 s
 
-# Test Scenarios
-
-## Scenario 1
+### Steps
 - **Given** DUT connected to the Ethernet
 And connection rate set to the highest rate
-- **When** uninhibitting task
+- **When** un-inhibiting task
 And when waiting TEST_WAIT time [s]
 - **Then** All connections are preserved during the TEST_WAIT time
 And data integrity is preserved during the TEST_WAIT time
 
-# Postconditions
+### Postconditions
+- Blanc the DUT
+
+
+## **test_connection_integrity.scenario_2**
+### Preconditions
+- DUT is in the Y state
+- Application Y downloaded to DUT
+- Task B is inhibited
+- All connections with external devices are set
+- All connections are not flickering over 20 s
+
+### Steps
+- **Given** DUT connected to the Ethernet
+And connection rate set to the highest rate
+- **When** un-inhibiting task
+And when waiting TEST_WAIT time [s]
+- **Then** All connections are preserved during the TEST_WAIT time
+And data integrity is preserved during the TEST_WAIT time
+
+### Postconditions
 - Blanc the DUT
