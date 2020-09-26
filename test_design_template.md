@@ -10,6 +10,7 @@
 # Test Bed diagram
 
 @startuml
+
 skinparam componentStyle rectangle
 
 package "Chassis1" {
