@@ -10,6 +10,7 @@
 # Test Bed diagram
 
 <div hidden>
+  
 ```
 @startuml required_equipment
 
@@ -26,7 +27,10 @@ package "Remote Chassis" {
 
 @enduml
 ```
+
 </div>
+
+![](required_equipment.svg)
 
 
 # Preconditions
