@@ -9,8 +9,10 @@
 
 # Test Bed diagram
 
+<div hidden>
 ```
-@startuml
+@startuml required_equipment
+
 skinparam componentStyle rectangle
 
 package "Chassis1" {
@@ -21,8 +23,11 @@ package "Remote Chassis" {
 [Adapter1] - [Adapter2]: Ethernet
 [Adapter2] - [IO]: Backplane
 }
+
 @enduml
 ```
+</div>
+
 
 # Preconditions
 - DUT is in the X state
