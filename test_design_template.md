@@ -9,7 +9,7 @@
 
 # Test Bed diagram
 
-'''
+```
 @startuml
 
 skinparam componentStyle rectangle
@@ -22,7 +22,7 @@ package "Remote Chassis" {
 [Adapter1] - [Adapter2]: Ethernet
 [Adapter2] - [IO]: Backplane
 }
-'''
+```
 
 @enduml
 
